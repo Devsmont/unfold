@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800);
+@font-face {
+    font-family : 'LineIcons';
+    src: url('../Assets/fonts/LineIcons.ttf') format('truetype');
+          
+}
+
+
+:root {
+  --cor-roxo:#764ef5;
+  --cor-branco:#fbfbfb ;
+  --cor-preto:#000000;
+
+  --fonte-geral: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color:var(--cor-branco);
+    font-family: var(--fonte-geral);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.cab {
+    padding:35px;
+    background:var(--cor-branco);
+    color:var(--cor-branco);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-box-shadow: 5px 0px 37px 17px #000000; 
+    box-shadow: 0px 0px 10px 0px #b8b8b8;
+    
+}
+
+
+.cab__menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.cab__menu__link {
+    font-size: 1rem;
+    text-decoration: none;
+    color:var(--cor-preto);
+}
+
+.cab__menu__home {
+    font-size: 1rem;
+    text-decoration: none;
+    color:var(--cor-roxo);
+    
+}
+
+.conteudo {
+  display: flex;
+}
+
+.Banner {
+    /* height: 550px;
+    width: 1399px; */
+    height: fit-content;
+    width: 100%;
+}
