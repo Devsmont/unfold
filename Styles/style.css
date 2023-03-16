@@ -2,14 +2,16 @@
 @font-face {
     font-family : 'LineIcons';
     src: url('../Assets/fonts/LineIcons.ttf') format('truetype');
+    src: url('../Assets/fonts/LineIcons.sbg') format('svg');
           
 }
 
 
 :root {
   --cor-roxo:#764ef5;
-  --cor-branco:#fbfbfb ;
+  --cor-branco:#fbfbfb;
   --cor-preto:#000000;
+  --cor-cinza:#ededed;
 
   --fonte-geral: 'Poppins', sans-serif;
 
@@ -31,6 +33,7 @@ body {
 }
 
 .cab {
+    width: 100%;
     padding:35px;
     background:var(--cor-branco);
     color:var(--cor-branco);
@@ -39,7 +42,8 @@ body {
     justify-content: space-around;
     -webkit-box-shadow: 5px 0px 37px 17px #000000; 
     box-shadow: 0px 0px 10px 0px #b8b8b8;
-    
+    position: fixed;
+
 }
 
 
@@ -65,11 +69,112 @@ body {
 
 .conteudo {
   display: flex;
+  flex-flow: wrap column;
+  gap:20px;
 }
 
-.Banner {
-    /* height: 550px;
-    width: 1399px; */
-    height: fit-content;
+.conteudo__Banner {
+    padding: 8% 0 0 0;
+    height: 550;
     width: 100%;
+    position:relative;
 }
+
+/* }
+.conteudo__Btn {
+    align-items: center;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:20px;
+}
+
+
+.conteudo__Btn__Link {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    border-collapse: collapse;
+    border: 1px solid var(--cor-cinza);
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    position:absolute;
+    
+    
+} */
+
+.Conteudo__About {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+.Conteudo__About__D {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.Conteudo__About__T {
+    padding: 6% 0% 1% 0%;
+    font-size: 30px;
+    
+}
+
+.Conteudo__About__P {
+    padding: 0 25% 2% 25%;
+    font-size: 15px;
+}
+
+  
+
+.Conteudo__About__Di {
+    gap:10px;
+    padding-left: 13%;
+    flex-direction: column;
+    display: flex;
+    text-align: justify;
+    justify-content: left;
+    width: 35%;
+    height: auto;
+    text-overflow: unset;
+    font-size: 15px;
+}
+
+.Conteudo__About__Div {
+    justify-content: left;
+    display: flex;
+    padding-left: 13%;
+    flex-flow : wrap;
+    width: 40%;
+    height: auto;
+    gap: 10px 50px;
+    font-size: 15px;
+}
+
+.Conteudo__About__Divi {
+    justify-content: right;
+    display: flex;
+}
+
+
+.Conteudo__Serv {
+    
+    background-color:var(--cor-cinza);
+    width: 100%;
+    height: 550px;
+    align-items:center;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:center;
+
+    
+    
+}
+
+
