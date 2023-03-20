@@ -29,7 +29,7 @@ body {
     font-family: var(--fonte-geral);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+
 
 }
 
@@ -71,6 +71,7 @@ body {
 .conteudo {
     display: flex;
     flex-flow: wrap column;
+    gap: 20px;
 }
 
 .conteudo__Banner {
@@ -79,25 +80,25 @@ body {
     width: 100%;
     /* position:relative; */
     background-image: url(../Assets/banner/banner.png);
-    background-size: 100%  550px;
+    background-size: 100%  100%;
     background-repeat: no-repeat;
 
 }
 
 #Banner__subtitle {
     color: var(--cor-roxo);
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 600;
 
 }
 
 #Banner__title {
-   font-size: 50px;
+   font-size: 3.125rem;
    color:var(--cor-preto);
 }
 
 #Banner__label {
-    font-size: 15px;
+    font-size: 0.938rem;
     color:var(--cor-cizabtn);
 }
 
@@ -119,7 +120,7 @@ body {
     color: var(--cor-cizabtn);
     text-decoration: none;
     justify-content: center;
-    font-size: 13px;
+    font-size: 0.813rem;
     color:var(--cor-branco);
     text-align: center;
     -webkit-box-shadow: 5px 0px 37px 17px #000000;
@@ -151,8 +152,6 @@ body {
     gap:2px;
 }
 
-
-
 .conteudo__Btn__Link {
     display: flex;
     border-collapse: collapse;
@@ -173,12 +172,11 @@ body {
 
 .Conteudo__About {
     width: 100%;
-    height: 550px;
+    height: 100%;
     display: flex;
     flex-direction:column;
-    /* gap: 20px; */
-}
-
+    align-content: center;
+} 
 
 
 
@@ -189,57 +187,61 @@ body {
 }
 
 .Conteudo__About__T {
-    padding: 6% 0% 1% 0%;
-    font-size: 30px;
+    padding: 10% 0% 1% 0%;
+    font-size:1.875rem;
 
 }
 
 .Conteudo__About__P {
-    padding: 0 25% 2% 25%;
-    font-size: 15px;
+    padding: 0 28% 3% 28%;
+    font-size: 0.938rem;
 }
 
-.container {
-    max-width: 500;
-}
+
 
 .Conteudo__About__Dir {
     display: flex;
     flex-direction: row;
-    justify-content:start;
     width: 100%;
-}
-
-.Conteudo__About__Divis {
+    /* max-width: 90%;*/
+} 
+.Conteudo__about__Divis {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    padding-left: 10%;
     width: 50%;
-    
-   
+    padding-right: 5;
+    padding-bottom: 10%;
 }
 
 .Conteudo__About__Di {
-    gap:10px;
-    padding-left: 13%;
     flex-direction: column;
     display: flex;
     text-align: justify;
-    justify-content: left;
-    font-size: 15px;
+    font-size: 0.938rem;
+}
+
+.Conteudo__About_Te {
+    display: flex;
+    padding-bottom: 3%;
     
 }
 
+.Conteudo__About__Pa {
+    padding-bottom: 3%;
+    color: var(--cor-cizabtn);
+    
+}
 
 .Conteudo__About__Div {
     margin-top: 15px;
-    justify-content: left;
-    display: flex;
-    padding: 0 0 0 13%;
-    flex-flow : wrap;
-    height: auto;
-    width: 50%;
-    gap: 10px 50px;
-    font-size: 15px;
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+    font-size:0.938rem;
+    gap: 10px 80px;
+    
 }
 
 #Cor__Icon {
@@ -248,26 +250,74 @@ body {
 
 .Conteudo__About__Divi {
     flex-direction: column;
-    justify-content: right;
     display: flex;
-    width: 40%;
-    margin-left: 10%;
+    align-content: space-between;
+    width: 50%;
+    row-gap: 14px;
+    padding-right: 10%;
+    padding-left: 5% ;
 }
+
+.container {
+    height: 3px;
+    background-color: #CCC;
+    width: 100%;
+    /* position: relative; */
+}
+
+#progress-barH{
+    display: flex;
+    width: 80%;
+    border: 2px solid var(--cor-roxo);
+    margin: 0 2% 1% 0; 
+    border-radius: 10px;
+}
+#progress-barC{
+    display: flex;
+    width: 60%;
+    border: 2px solid var(--cor-roxo);
+    margin: 0 2% 1% 0; 
+    border-radius: 10px;
+}
+#progress-barP{
+    display: flex;
+    width: 50%;
+    border: 2px solid var(--cor-roxo);
+    margin: 0 2% 1% 0; 
+    border-radius: 10px;
+}
+#progress-barS{
+    display: flex;
+    width: 90%;
+    border: 2px solid var(--cor-roxo);
+    margin: 0 2% 1% 0; 
+    border-radius: 10px;
+}
+
 
 
 .Conteudo__Serv {
-
     background-color:var(--cor-cinza);
     width: 100%;
-    height: 550px;
-    align-items:center;
+    height: 100%;
     display: flex;
     flex-direction:column;
-    justify-content:space-between;
-    text-align:center;
-
-
-
+    align-content: center;
 }
 
 
+.Conteudo__Serv__D {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.Conteudo__Serv__T {
+    padding: 10% 0% 1% 0%;
+    font-size:1.875rem;
+}
+
+.Conteudo__Serv__P {
+    padding: 0 28% 3% 28%;
+    font-size: 0.938rem;
+}
