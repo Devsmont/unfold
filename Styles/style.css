@@ -195,6 +195,7 @@ body {
 .Conteudo__About__P {
     padding: 0 28% 3% 28%;
     font-size: 0.938rem;
+    color:var(--cor-cizabtn);
 }
 
 
