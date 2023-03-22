@@ -484,6 +484,10 @@ body {
     height: 360px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 .Btn__Port {
@@ -495,7 +499,6 @@ body {
     text-decoration: none;
     justify-content: center;
     padding: 20px;
-    width:5%;
     
 }
 
@@ -503,6 +506,21 @@ body {
     font-size: 25px;
     font-weight: 100;
     color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#Ori__Port {
+    display: flex;
+    gap: 30px;
+}
+
+#linha_horizontal_P {
+    display: flex;
+    width: 100px;
+    border: 1px solid var(--cor-branco);
+
 }
 
 #Tabela__Img1 {
