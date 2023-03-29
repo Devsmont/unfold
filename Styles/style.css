@@ -25,7 +25,7 @@
 }
 
 body {
-    box-sizing: border-box;
+   
     background-color:var(--cor-branco);
     font-family: var(--fonte-geral);
     display: flex;
@@ -38,12 +38,14 @@ body {
     background:var(--cor-branco);
     color:var(--cor-branco);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     -webkit-box-shadow: 5px 0px 37px 17px #000000;
     box-shadow: 0px 0px 10px 0px #b8b8b8;
     position: fixed;
+}
 
+.containerbox {
+    display: none;
 }
 
 
@@ -329,6 +331,10 @@ body {
 
 }
 
+.Conteudo__Serv__TabelaMob {
+    display: none;
+}
+
 #Tabela {
     background-color:var(--cor-branco) ;
     text-align: center;
@@ -484,6 +490,10 @@ body {
 
 }
 
+.Conteudo__Port__TabelaMob {
+    display: none;
+}
+
 #Tabela__P {
     text-align: center;
     width: 360px;
@@ -556,8 +566,6 @@ body {
     justify-content: center;
     padding: 20px;
     font-size: 20px;
-
-
 }
 
 
@@ -678,6 +686,10 @@ body {
     justify-content: space-between;
 
 
+}
+
+.por-pricer-tableMob {
+    display: none;
 }
 
 #tabela-prices {
@@ -927,7 +939,7 @@ body {
 #form-text {
     display: flex;
     flex-direction: column;
-    padding: 12px 18px 0 20px;
+    padding: 12px 195px 0 20px;
     border: 1px solid var(--cor-cinzaC);
     box-sizing: border-box;
     border-radius: 4px;
@@ -1032,3 +1044,153 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width:600px) {
+
+    .cab__menu{
+        display: none;
+    }
+
+    .cab {
+        padding: 0 0 0 0;
+        width: 100%;
+        height: 90px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .containerbox {
+        display: flex;
+        justify-content: center;
+        margin-left: 9em;
+        
+    }
+
+     .cab__menu-hamburguer {
+        background-image: url("/Assets/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+
+    .container__imagem {
+        padding: 1em;
+    }
+
+    .List-Ori {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        left: 2%;
+        width: 100vw;
+        margin-top: 5px;
+        list-style-type: none;
+        
+    }
+    
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+    
+    .lista-menu__titulo,
+    .lista-menu__item {
+        padding: 10px;
+        background-color: var(--cor-branco);
+    }
+
+    .container__botao {
+        display: none;
+    }
+    
+    .lista-menu__titulo {
+        color: var(--cor-roxo);
+        font-weight: 700;
+    }
+    
+    .lista-menu__link {
+        background: var(--cor-roxo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+    
+    .cab__img {
+        height: 50px;
+    }
+
+    .conteudo__Banner {
+        margin-top: 20%;
+        height: 100%;
+        width: 100%;
+        background-image: url(../Assets/banner/banner.png);
+        background-size: 100%  100%;
+        background-repeat: no-repeat;
+    
+    }
+
+    .Conteudo__Serv__Tabela {
+        display:none;
+    }
+
+    .Conteudo__Serv__TabelaMob {
+        display: flex;
+        background-color:var(--cor-cinza);
+        width: 90%;
+        height: 100%;
+        flex-direction:column;
+        align-content: center;
+        padding-left: 10%;
+        
+    }
+
+    #Tabela__I {
+        align-self: center;
+    }
+
+
+
+    .Conteudo__Port__Tabela {
+        display: none;
+    }
+
+    .Conteudo__Port__TabelaMob {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .port-prices-table {
+        display: none;
+    }
+
+    .port-prices-tableMob {
+        display: flex;
+        width: 80%;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .blog-photo {
+        flex-direction: column;
+    }
+
+
+
+    #form-text {
+        padding: 12px 0px 0 20px;
+    }
+
+}
