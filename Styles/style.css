@@ -959,7 +959,7 @@ body {
 }
 
 #form-input {
-    padding: 12px 55% 12px 20px;
+    padding: 12px 300px 12px 20px;
     border: 1px solid var(--cor-cinzaC);
     box-sizing: border-box;
     border-radius: 4px;
@@ -1364,7 +1364,7 @@ body {
     }
 
     #form-input {
-        padding: 12px 50% 12px 20px;
+        padding: 12px 100px 12px 20px;
         border: 1px solid var(--cor-cinzaC);
         box-sizing: border-box;
         border-radius: 4px;
