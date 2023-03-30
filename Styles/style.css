@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800);mm
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800);
 @font-face {
     font-family : 'LineIcons';
     src: url('../Assets/fonts/LineIcons.ttf') format('truetype');
@@ -1361,6 +1361,15 @@ body {
     .form {
         width: 85%;
         padding-left: 3%;
+    }
+
+    #form-input {
+        padding: 12px 50% 12px 20px;
+        border: 1px solid var(--cor-cinzaC);
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-bottom: 25px;
+        font-family:var(--fonte-geral);
     }
 
     #form-text {
