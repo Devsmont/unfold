@@ -1364,6 +1364,7 @@ body {
     }
 
     #form-input {
+        display: none;
         padding: 12px 0px 12px 20px;
         border: 1px solid var(--cor-cinzaC);
         box-sizing: border-box;
